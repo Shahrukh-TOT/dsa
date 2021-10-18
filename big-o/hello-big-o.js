@@ -12,11 +12,14 @@ function findNemo(array) {
 
 /**
  * Horrible to Excellent
+ * 
  * <------ Horrible -------><--- Bad ---><- Fair -><- Good -><- Excellent ->
  * O(n!) > O(2^n) > O(n^2) > O(n log n) >   O(n) > O(log n) >   O(1)
  * 
- * O(n) --> Linear Time
- * O(1) --> Constant Time
+ * O(n)     --> Linear Time
+ * O(1)     --> Constant Time
+ * O(n^2)   --> Quadratic Time
+ * O(n!)    --> Factorial Time
  */
 
 // 
