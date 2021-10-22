@@ -21,29 +21,6 @@ Output: 23
  * @return {number}
  */
 var maxSubArray = function (nums) {
-    let low = 0;
-    let sum = nums.reduce((pre, next) => pre + next, 0);
-    let removeFromLeft = true;
-
-    while (true) {
-        if (removeFromLeft) {
-            nums.splice(0, 1);
-            low = nums.reduce((pre, next) => pre + next, 0);
-        } else {
-            nums.splice(nums.length - 1, 1);
-            low = nums.reduce((pre, next) => pre + next, 0);
-        }
-        if (low < sum) {
-            removeFromLeft = false;
-        } else {
-            removeFromLeft = true;
-        }
-
-        if (low == 0) break
-        console.log(low);
-    }
-
-
 
 };
 
