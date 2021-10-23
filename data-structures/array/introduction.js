@@ -36,3 +36,17 @@ console.log(strings);
 // 3. Move Zeroes
 // 4. Contains Duplicate
 // 5. Rotate Arrays
+
+/**
+ * Array Review
+ *
+ *  PROs
+ * 1. Fast lookups
+ * 2. Fast push/pop
+ * 3. Ordererd
+ *
+ * CONs
+ * 1. Slow inserts
+ * 2. Slow deletes
+ * 3. Fixed size in static array
+ */
