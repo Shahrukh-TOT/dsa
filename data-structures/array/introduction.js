@@ -1,0 +1,41 @@
+const strings = ['a', 'b', 'c', 'd'];
+// 4*4 = 16 bytes of storage
+
+// Operations
+
+// Lookup
+strings[2] // O(1)
+
+// Push
+strings.push('e'); // O(1)
+
+// Pop
+strings.pop(); // O(1)
+
+// Unshift/Insert
+strings.unshift('x'); // O(n)
+
+// Splice/Delete/Insert
+strings.splice(2, 0, 'z'); // O(n)
+
+console.log(strings);
+
+/**
+ * Types of Array
+ *
+ * 1. Static Array
+ * 2. Dynamic Array
+ */
+
+// Append O(1) can be O(n)
+
+
+// 1. Two Sum
+
+// 2. Maximum Subarray 
+
+// 3. Move Zeroes
+
+// 4. Contains Duplicate
+
+// 5. Rotate Arrays
