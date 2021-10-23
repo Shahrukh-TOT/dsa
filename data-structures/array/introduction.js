@@ -30,12 +30,9 @@ console.log(strings);
 // Append O(1) can be O(n)
 
 
+// Solve the following problems
 // 1. Two Sum
-
 // 2. Maximum Subarray 
-
 // 3. Move Zeroes
-
 // 4. Contains Duplicate
-
 // 5. Rotate Arrays
