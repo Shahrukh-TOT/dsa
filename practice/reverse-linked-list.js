@@ -19,8 +19,6 @@ var reverseList = function (head) {
         nxtNode.next = preNode; // pointing previous node as next in the nxtNode till the end of the list
         preNode = nxtNode; // increase the pointer by 1
         nxtNode = tempNode; // increase the pointer by 1
-
-
     }
     head.next = null; // close circular loop
     head = preNode; 
