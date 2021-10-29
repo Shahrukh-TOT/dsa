@@ -1,4 +1,4 @@
-let nums = [3, 2, 4];
+let numbers = [3, 2, 4];
 let target = 6;
 
 let num1 = [1, 2, 3, 4, 5, 6];
