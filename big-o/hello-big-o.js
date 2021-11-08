@@ -20,6 +20,7 @@ function findNemo(array) {
  * O(1)     --> Constant Time
  * O(n^2)   --> Quadratic Time
  * O(n!)    --> Factorial Time
+ * O(2^n)   --> Expontial Time
  */
 
 // 
