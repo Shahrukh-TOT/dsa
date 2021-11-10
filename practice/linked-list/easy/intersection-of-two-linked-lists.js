@@ -11,43 +11,24 @@ function ListNode(val) {
  * @return {ListNode}
  */
 var getIntersectionNode = function (headA, headB) {
+    if (headA === null || headB === null) return null;
 
-    if (!headA || !headB) return null;
-    if (headA.val == headB.val && !headA.next && !headB.next && headA.next == headB.next) return headA;
+    let currentA = headA;
+    let currentB = headB;
 
-    let length1 = 0;
-    let length2 = 0;
-
-    let currNode1 = headA;
-    let currNode2 = headB;
-
-    while (currNode1) {
-        length1++;
-        currNode1 = currNode1.next;
+    while (currentA !== currentB) {
+        if (currentA == currentB) return currentA;
+        if (currentA === null) currentA = headB;
+        if (currentB === null) currentB = headA;
+        currentA = currentA.next;
+        currentB = currentB.next;
     }
 
-    while (currNode2) {
-        length2++;
-        currNode2 = currNode2.next;
-    }
-
-    currNode1 = headA;
-    currNode2 = headB;
-
-    for (let i = 0; i < Math.abs(length1 - length2); i++) {
-        if (length1 < length2) {
-            currNode2 = currNode2.next;
-        } else {
-            currNode1 = currNode1.next;
-        }
-    }
-
-    while (true) {
-        if (currNode1.next == currNode2.next)
-            return length2 == length1 ? currNode1 : currNode1.next;
-        else {
-            currNode1 = currNode1.next;
-            currNode2 = currNode2.next;
-        }
-    }
+    return currentA;
 };
+
+let intersectVal = { val: 8, next: { val: 4, next: { val: 5, next: null } } };
+let listA = { val: 4, next: { val: 1, next: intersectVal } };
+let listB = { val: 5, next: { val: 6, next: { val: 1, next: intersectVal } } };
+
+console.log(JSON.stringify(getIntersectionNode(listA, listB)));
